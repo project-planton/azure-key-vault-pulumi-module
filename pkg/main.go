@@ -13,10 +13,10 @@ func Resources(ctx *pulumi.Context, stackInput *azurekeyvault.AzureKeyVaultStack
 	_, err := azure.NewProvider(ctx,
 		"azure",
 		&azure.ProviderArgs{
-			ClientId:       pulumi.String(azureCredential.Spec.ClientId),
-			ClientSecret:   pulumi.String(azureCredential.Spec.ClientSecret),
-			SubscriptionId: pulumi.String(azureCredential.Spec.SubscriptionId),
-			TenantId:       pulumi.String(azureCredential.Spec.TenantId),
+			ClientId:       pulumi.String(azureCredential.ClientId),
+			ClientSecret:   pulumi.String(azureCredential.ClientSecret),
+			SubscriptionId: pulumi.String(azureCredential.SubscriptionId),
+			TenantId:       pulumi.String(azureCredential.TenantId),
 		})
 	if err != nil {
 		return errors.Wrap(err, "failed to create azure provider")
