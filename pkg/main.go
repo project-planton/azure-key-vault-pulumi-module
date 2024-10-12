@@ -1,7 +1,7 @@
 package pkg
 
 import (
-	azurekeyvaultv1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/provider/azure/azurekeyvault/v1"
+	azurekeyvaultv1 "buf.build/gen/go/project-planton/apis/protocolbuffers/go/project/planton/provider/azure/azurekeyvault/v1"
 	"github.com/pkg/errors"
 	"github.com/pulumi/pulumi-azure/sdk/v5/go/azure"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
